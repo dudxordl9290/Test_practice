@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>News List Page</h1>
+<ul>
+    {% for title in news_title %}
+        <li>
+            {{title}}
+        </li>
+    {% endfor %}
+
+{% endblock %}
+</ul>

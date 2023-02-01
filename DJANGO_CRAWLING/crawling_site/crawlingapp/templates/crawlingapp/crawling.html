@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class='container'>
+<h1>Crawling Page!</h1>
+        <form method="POST">
+        {% csrf_token %}
+                <input class="btn btn-primary" type="submit" value="크롤링하기">
+        </form>
+        
+
+</div>
+
+{% endblock %}
